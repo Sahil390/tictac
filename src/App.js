@@ -13,23 +13,23 @@ function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   const [isXNext, setIsXNext] = useState(true);
 
-  const handleClick = (index) => {
-    if (squares[index] || calculateWinner(squares)) {
+  const hclick = (index) => {
+    if (squares[index] || cwin(squares)) {
       return;
     }
-    const nextSquares = squares.slice();
-    nextSquares[index] = isXNext ? 'X' : 'O';
-    setSquares(nextSquares);
+    const nsquare = squares.slice();
+    nsquare[index] = isXNext ? 'X' : 'O';
+    setSquares(nsquare);
     setIsXNext(!isXNext);
   };
 
-  const winner = calculateWinner(squares);
+  const winner = cwin(squares);
   const status = winner
     ? `Winner: ${winner}`
     : `Next player: ${isXNext ? 'X' : 'O'}`;
 
   const renderSquare = (index) => {
-    return <Square value={squares[index]} onClick={() => handleClick(index)} />;
+    return <Square value={squares[index]} onClick={() => hclick(index)} />;
   };
 
   return (
@@ -54,7 +54,7 @@ function Board() {
   );
 }
 
-function calculateWinner(squares) {
+function cwin(squares) {
   const lines = [
     [0, 1, 2],
     [3, 4, 5],
