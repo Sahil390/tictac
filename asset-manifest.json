@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Sahil390/tictac/static/css/main.a563c342.css",
+    "main.js": "/Sahil390/tictac/static/js/main.3f2e13d1.js",
+    "static/js/453.db404df8.chunk.js": "/Sahil390/tictac/static/js/453.db404df8.chunk.js",
+    "index.html": "/Sahil390/tictac/index.html",
+    "main.a563c342.css.map": "/Sahil390/tictac/static/css/main.a563c342.css.map",
+    "main.3f2e13d1.js.map": "/Sahil390/tictac/static/js/main.3f2e13d1.js.map",
+    "453.db404df8.chunk.js.map": "/Sahil390/tictac/static/js/453.db404df8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a563c342.css",
+    "static/js/main.3f2e13d1.js"
+  ]
+}
